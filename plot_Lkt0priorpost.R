@@ -1,7 +1,7 @@
-# plotting Fig 3 using MCMC estimates in the manuscript
-# growth_bf2000_mcmc.cs cannot be uploaded because its size is greater than 25M.
-# plot_Lkt0priorpostnormdis gives a similar figure using statistics
-setwd("E:/fishr/cardinalisGN4")
+# plotting Fig 3 using MCMC estimates from grow06_18.R in the manuscript
+# It's difficult to upload the data files due to the limited space size
+# plot_Lkt0priorpostnormdis.R gives a similar figure using statistics of these files
+setwd("E:/fishr/cardinalisG")
 rm(list=ls())
 databf00<-read.csv("grow_bf2000_mcmc.csv")
 data6<-read.csv("grow_2006_mcmc.csv")
@@ -13,7 +13,7 @@ data18<-read.csv("grow_2018_mcmc.csv")
 den_bf00l<-density(databf00$'theta.1.')
 den_bf00k<-density(databf00$'theta.2.')
 den_bf00t<-density(databf00$'theta.3.')
-den_6l<-density(data6$'theta.1.')     #2006
+den_6l<-density(data6$'theta.1.')      #2006
 den_6k<-density(data6$'theta.2.')
 den_6t<-density(data6$'theta.3.') 
 den_7l<-density(data7$'theta.1.')      #2007
