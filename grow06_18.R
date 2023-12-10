@@ -1,9 +1,9 @@
-setwd("E:/fishr/cardinalisGN4")
+setwd("E:/fishr/cardinalisGN4") # set your own working directory when using this code
 rm(list=ls())
 library(rjags)
 library(LaplacesDemon)
 year<-2006
-file1<-paste("growth",as.character(year),".csv",sep="")
+file1<-paste("growth",as.character(year),".csv",sep="") # put data files in the same working directory; otherwise, working directory must be specified
 file2<-paste("growth_",as.character(year),"_statistics.csv",sep="")
 file3<-paste("growth_",as.character(year),"_mcmc.csv",sep="")
 growdata<-read.csv(file1)
