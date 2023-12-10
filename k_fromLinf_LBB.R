@@ -1,9 +1,8 @@
 # Estimate growth performance index and growth parameter k using values of Linf from LBB
 # Values of Linf from LBB were estimated by Wang et al.(2020)
-# phi_com and k_com are common growth performance index and common growth parameter k between 2006 and 2018
-#          for the data of Wang et al. (2020)
-# phi and k include growth performance index and growth parameter k in each year between 2006 and 2018.
-setwd("E:/fishr/cardinalisGN4")
+# phi_com and k_com are common growth performance index and common growth parameter k between 2006 and 2018 for the data of Wang et al. (2020)
+# phi and k include growth performance index and growth parameter k in each year between 2006 and 2018 for the data of Wang et al. (2020).
+setwd("E:/fishr/cardinalisG")
 rm(list=ls())
 library(rjags)
 library(LaplacesDemon)
