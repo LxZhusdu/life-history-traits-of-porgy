@@ -1,4 +1,4 @@
-setwd("E:/fishr/cardinalisGN4") # set your own working directory when using this code
+setwd("E:/fishr/cardinalisG") # set your own working directory when using this code
 rm(list=ls())
 library(rjags)
 library(LaplacesDemon)
