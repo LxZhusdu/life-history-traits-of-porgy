@@ -1,7 +1,8 @@
 # Plotting Fig 4
 # grow_bf2000_mcmc.csv outputted from growbf2000.R is too large
 # values of R were removed from grow_bf2000_mcmc.csv and the left was put in grow_bf2000S_mcmc.csv
-setwd("E:/fishr/cardinalisGN4")
+# Similarly,k_wangS1_mcmc.csv only includes k_com and phi_com in k_wang_mcmc.csv to reduce the size of data file
+setwd("E:/fishr/cardinalisG")
 rm(list=ls())
 data1999<-read.csv("grow_bf2000S_mcmc.csv")
 datawang<-read.csv("k_wang_mcmc.csv")
