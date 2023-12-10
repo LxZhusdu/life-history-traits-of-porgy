@@ -1,6 +1,6 @@
 # plotting Fig 3 using MCMC estimates from grow06_18.R in the manuscript
-# It's difficult to upload the data files due to the limited space size
-# plot_Lkt0priorpostnormdis.R gives a similar figure using statistics of these files
+# Data files are very large and it's difficult to upload them due to the limited space size. Users can plot this figure using the results you calculate.
+# plot_Lkt0priorpostnormdis.R gives a similar figure using statistics of these files.
 setwd("E:/fishr/cardinalisG")
 rm(list=ls())
 databf00<-read.csv("grow_bf2000_mcmc.csv")
