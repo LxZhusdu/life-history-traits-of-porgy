@@ -1,8 +1,8 @@
-setwd("E:/fishr/cardinalisGN4")
+setwd("E:/fishr/cardinalisG") # set your own working directory when using this code
 rm(list=ls())
 library(rjags)
 library(LaplacesDemon)
-growdata<-read.csv("E:/fishr/cardinalisGN4/growthbf2006.csv")
+growdata<-read.csv("growthbf2000.csv") # Put file growthbf2000 in your working directory
 omega<-structure(.Data=c(1,0.001,0.001,0.001,1,0.001,0.001,0.001,1),.Dim=c(3,3))
 B<-cbind(growdata$Linf,growdata$K,growdata$t0)
 n<-nrow(B)
@@ -11,13 +11,10 @@ parameters=c("theta","R")
 n.adapt<-  50000
 n.update<-50000
 n.iter<-  50000
-jm<-jags.model("growmodelbf2006.R",data=data,n.chains=3,n.adapt=n.adapt) 
+jm<-jags.model("growmodelbf2000.R",data=data,n.chains=3,n.adapt=n.adapt) 
 update(jm,n.update)
-
 zm<-coda.samples(jm,variable.names=parameters,n.iter=n.iter,n.thin=10) #conduct repeatly if not converge
-print(gelman.diag(zm))
 print(heidel.diag(zm))
-
 sta_grow<-summary(zm)               
 mu_sd<-sta_grow$stat[,1:2]         
 q_CI<-sta_grow$quantile[,c(3,1,5)]  
