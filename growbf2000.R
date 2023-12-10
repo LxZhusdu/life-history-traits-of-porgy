@@ -1,3 +1,4 @@
+# Calculate growth parameters using the priors and data sets between 1961 and 1999. 
 setwd("E:/fishr/cardinalisG") # set your own working directory when using this code
 rm(list=ls())
 library(rjags)
@@ -21,8 +22,8 @@ q_CI<-sta_grow$quantile[,c(3,1,5)]
 df<-as.data.frame(rbind(zm[[1]],zm[[2]],zm[[3]]))    # put N chains results together
 HDI<-p.interval(df,HPD=TRUE,MM=FALSE,plot=FALSE)
 table<-cbind(mu_sd,q_CI,HDI)
-#write.csv(signif(table,digits=9),file="grow_bf2006_statistics.csv") 
-#write.csv(df,file="grow_bf2006_mcmc.csv")
+#write.csv(signif(table,digits=9),file="grow_bf2000_statistics.csv") 
+#write.csv(df,file="grow_bf2000_mcmc.csv")
 
 k<-df[,11]
 linf<-df[,10]
