@@ -1,5 +1,5 @@
 # Plotting a similar figure to Fig 3 using statistics
-setwd("E:/fishr/cardinalisGN4")
+setwd("E:/fishr/cardinalisG")
 rm(list=ls())
 databf00s<-read.csv("grow_bf2000_statistics.csv")
 data6s<-read.csv("grow_2006_statistics.csv")
