@@ -1,4 +1,6 @@
-# Calculate growth parameters using the priors and data sets between 1961 and 1999. 
+# Calculate growth parameters using the priors and data sets between 1961 and 1999. The results was used:
+# 1) as new priors to derive growth parameters since 2006 (values between 2000 and 2005 were not found);
+# 2) to calculate growth performance index
 setwd("E:/fishr/cardinalisG") # set your own working directory when using this code
 rm(list=ls())
 library(rjags)
