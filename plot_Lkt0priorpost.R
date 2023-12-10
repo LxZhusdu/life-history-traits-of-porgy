@@ -1,4 +1,6 @@
 # plotting Fig 3 using MCMC estimates in the manuscript
+# growth_bf2000_mcmc.cs cannot be uploaded because its size is greater than 25M.
+# plot_Lkt0priorpostnormdis gives a similar figure using statistics
 setwd("E:/fishr/cardinalisGN4")
 rm(list=ls())
 databf00<-read.csv("grow_bf2000_mcmc.csv")
