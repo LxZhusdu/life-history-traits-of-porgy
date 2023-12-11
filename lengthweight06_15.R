@@ -1,4 +1,4 @@
-setwd("E:/fishr/cardinalisWN3") # set your working directory
+setwd("E:/fishr/cardinalisW") # set your working directory
 rm(list=ls())
 library(rjags)
 library(LaplacesDemon)
