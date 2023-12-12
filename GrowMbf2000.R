@@ -2,7 +2,7 @@ setwd("E:/fishr/cardinalisM")
 rm(list=ls())
 library(rjags)
 library(LaplacesDemon)
-mydata<-read.csv("E:/fishr/cardinalisG/growthbf2000.csv")
+mydata<-read.csv("E:/fishr/cardinalisG/growthbf2000.csv") # values of natural mortality rate were stored together with growth parameters
 omega<-structure(.Data=c(1,0.001,0.001,0.001,1,0.001,0.001,0.001,1),.Dim=c(3,3))
 B<-cbind(mydata$Linf,mydata$K,mydata$M)
 n<-nrow(B)
