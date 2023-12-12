@@ -21,4 +21,4 @@ Natural mortality rate
 (1) GrowMbf2000.R, Mmodelbf2000.R and growthbf2000.csv produced distributions for natural mortality rate in 1999 using the priors and values between 1961 and 1999, which served as new priors.
 (2) GrowM06_18MPauly.R, Mmodel06_18.R and growthxxxx.csv produced distributions for natural mortality rate in a year between 2006 and 2018, in which values estimated using Pauly's empirical equation for the data of Wang et al.(2020) were used.
 (3) GrowM06_18MtoK.R, Mmodel06_18.R and growthxxxx.csv produced distributions for natural mortality rate in a year between 2006 and 2018, in which values estimated using the ratio of M to K for the data of Wang et al.(2020) were used.
-(4)
+(4) plot_Mprorpost.R plots figure 8 in the manuscript. But date files are not uploaded due to the large size. plot_Mpriorpostnormdis.R plots a figure like figure 8 using statistics of data files requred by plot_Mpriorpost.R. These data files are uploaded.
