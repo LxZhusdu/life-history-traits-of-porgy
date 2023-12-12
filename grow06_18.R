@@ -22,7 +22,7 @@ jm<-jags.model("growmodel06_18.R",
 update(jm,n.update)
 
 zm<-coda.samples(jm, variable.names=c("theta","rho"),n.iter=n.iter,n.thin=10) # conduct repeatly if not converge
-gelman<-gelman.diag(zm)
+print(gelman.diag(zm))
 print(heidel.diag(zm))
 
 sta_grow<-summary(zm)              
